@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>Damietta University Login</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('image for grad.jpg') no-repeat center center fixed;
+        background-size: cover;
+      }
+      .container {
+        text-align: center;
+        background-color: rgba(226, 226, 226, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+      }
+      .container img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      .container h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .input-group {
+        margin-bottom: 15px;
+        position: relative;
+      }
+      .input-group input {
+        width: 100%;
+        padding: 10px;
+        padding-left: 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .input-group i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+      }
+      .container a {
+        display: block;
+        margin-bottom: 20px;
+        color: #888;
+        text-decoration: none;
+      }
+      .container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #000080;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .container .role {
+        margin: 20px 0;
+      }
+      .container .role input {
+        margin-right: 5px;
+      }
+      .container .role label {
+        margin-right: 15px;
+      }
+      .container .refresh {
+        margin-top: 20px;
+        color: #000080;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        alt="Damietta University Logo"
+        height="100"
+        src="logo uni.png"
+        width="100"
+      />
+      <div class="input-group">
+        <i class="fas fa-id-card"> </i>
+        <input placeholder="National ID" type="text" />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"> </i>
+        <input placeholder="Password" type="password" />
+      </div>
+      <a href="#"> Forget password ? </a>
+      <button>Log In</button>
+      <div class="role">
+        <input
+          checked=""
+          id="student"
+          name="role"
+          type="radio"
+          value="student"
+        />
+        <label for="student"> Student </label>
+        <input id="supervisor" name="role" type="radio" value="supervisor" />
+        <label for="supervisor"> Supervisor </label>
+        <input id="admin" name="role" type="radio" value="admin" />
+        <label for="admin"> Admin </label>
+      </div>
+      <div class="refresh">Fresh</div>
+    </div>
+  </body>
+</html>
